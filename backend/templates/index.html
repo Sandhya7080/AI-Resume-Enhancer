@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Enhancer - Upload and Improve Your Resume</title>
+    <meta name="description" content="Enhance your resume with AI suggestions. Upload PDF or DOCX formats and get improvement tips instantly.">
+    <meta name="keywords" content="AI Resume Enhancer, Resume Improvement, PDF Resume, DOCX Resume, AI Suggestions">
+    <meta name="author" content="AI Resume Enhancer Team">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>AI Resume Enhancer</h1>
+        <p>Your intelligent assistant to upgrade your resume for job success</p>
+    </header>
+    <main>
+        <div class="left-section">
+            <section id="upload-section">
+                <h2>Upload Your Resume</h2>
+                <p><strong>Accepted Formats:</strong> PDF, DOCX</p>
+                <p><strong>File Naming Tip:</strong> Use your name and job title (e.g., <em>John_Doe_Resume.pdf</em>)</p>
+                <input type="file" id="resume-upload" accept=".pdf, .docx" />
+                <div id="file-name">No file selected</div>
+                <button id="submit-resume">Submit</button>
+            </section>
+            <section id="suggestions">
+                <h2>Suggestions</h2>
+                <div id="suggestions-list">No suggestions yet. Upload your resume to receive feedback.</div>
+            </section>
+        </div>
+        <div class="right-section">
+            <div class="help-box">
+                <h3>How We Can Help You</h3>
+                <ul>
+                    <li>Analyze resume formatting and structure</li>
+                    <li>Highlight weak or missing sections</li>
+                    <li>Recommend power words and skills</li>
+                    <li>Optimize your resume for ATS systems</li>
+                    <li>Suggest role-specific customizations</li>
+                    <li>Provide grammar and clarity improvements</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('resume-upload').addEventListener('change', function(e) {
+            const fileName = e.target.files[0] ? e.target.files[0].name : "No file selected";
+            document.getElementById('file-name').textContent = fileName;
+        });
+    </script>
+</body>
+</html>

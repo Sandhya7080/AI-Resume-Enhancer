@@ -1,0 +1,105 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+}
+
+header {
+    background: #2b2e4a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #322f48;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.left-section,
+.right-section {
+    width: 48%;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #7efff5;
+}
+
+#upload-section {
+    margin-bottom: 30px;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #7efff5;
+    border-radius: 8px;
+    background: #3e3a5d;
+    color: #fff;
+    cursor: pointer;
+}
+
+#file-name {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #6c63ff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4e47c3;
+}
+
+#suggestions-list {
+    background: #47426c;
+    border: 1px solid #7efff5;
+    padding: 15px;
+    border-radius: 8px;
+    color: #eee;
+}
+
+.help-box {
+    background: #3d3961;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #6c63ff;
+}
+
+.help-box h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.help-box ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.help-box li {
+    margin-bottom: 10px;
+    color: #ddd;
+}
